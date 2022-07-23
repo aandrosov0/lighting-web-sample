@@ -152,6 +152,11 @@ button span {
 }
 
 @media only screen and (max-width: 700px) {
+	body {
+		overflow-x:hidden;
+		width:100%;
+	}
+
 	nav {
 		border: 0 solid #15181c;
 		border-bottom-width: 2px;
