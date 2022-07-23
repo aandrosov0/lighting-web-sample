@@ -189,15 +189,15 @@ button span {
 	}
 
 	.lamp-container {
-		display: block;
 		position: static;
+		display: block;
 		margin: 0 auto;
 	}
 
 	.light {
 		position: absolute;
-		top: 47%;
 		z-index: -1;
+		top: 455px;
 		width: 700px;
 	}
 
