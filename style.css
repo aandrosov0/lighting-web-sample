@@ -150,3 +150,71 @@ button span {
 .on {
 	opacity: 1;
 }
+
+@media only screen and (max-width: 700px) {
+	nav {
+		border: 0 solid #15181c;
+		border-bottom-width: 2px;
+	}
+
+	nav ul {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 86px;
+		right: 0;
+		z-index: 1;
+		text-align: center;
+		background: #15181c;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 10px 0 10px 0;
+	}
+
+	nav ul li a:hover {
+		color:  #00986f;
+		transition: color 0.5s;
+	}
+
+	nav ul li {
+		font-size: 20px;
+	}
+
+	button {
+		margin-right: 35px;
+		position: absolute;
+		right: 0;
+	}
+
+	.lamp-container {
+		display: block;
+		position: static;
+		margin: 0 auto;
+	}
+
+	.light {
+		position: absolute;
+		top: 47%;
+		z-index: -1;
+		width: 700px;
+	}
+
+	.text-container {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.control {
+		margin-right: 35px;
+	}
+
+	#menuList {
+		overflow: hidden;
+		transition: 0.5s;
+	}
+}

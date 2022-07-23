@@ -8,10 +8,10 @@
 <body>
 	<div class="hero">
 		<nav>
-			<img src="images/menu.png" class="menu-img">
+			<img src="images/menu.png" class="menu-img" onclick="toggleMenu()">
 			<img src="images/logo.png" class="logo">
 
-			<ul>
+			<ul id="menuList">
 				<li><a href="">Latest</a></li>
 				<li><a href="">Modern</a></li>
 				<li><a href="">Contemporary</a></li>
@@ -42,10 +42,21 @@
 <script>
 	var btn = document.getElementById("btn")
 	var light = document.getElementById("light")
+	var menuList = document.getElementById("menuList")
+
+	menuList.style.maxHeight = "0px"
 
 	function toggleBtn() {
 		btn.classList.toggle("active")
 		light.classList.toggle("on")
+	}
+
+	function toggleMenu() {
+		if(menuList.style.maxHeight == "0px") {
+			menuList.style.maxHeight = "130px"
+		} else {
+			menuList.style.maxHeight = "0px"
+		}
 	}
 </script>
 </body>
